@@ -1,0 +1,43 @@
+.container{
+    font-size: 22px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid darkblue;
+}
+.row{
+    flex-direction: column;
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+input{
+    padding: 10px 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.12);
+}
+
+button{
+    padding: 10px 10px;
+    font-size: 15px;
+    color: white;
+    background-color: midnightblue;
+    cursor: pointer;
+    border: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+label{
+    color:darkblue
+}
+.error{
+    color: red;
+    padding: 5px 0px;
+    font-size: 12px;
+}

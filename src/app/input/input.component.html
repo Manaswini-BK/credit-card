@@ -1,0 +1,15 @@
+<input [formControl]="control" [mask]="mask" [dropSpecialCharacters]="false">
+<ng-container *ngIf="control && control.dirty && control.touched && control.errors">
+  <div *ngIf="control.errors!['required']" class="error" >
+    Please fill this field
+  </div>
+  <div *ngIf="control.errors!['minlength']" class="error">
+    Value must be {{ control!.errors!['minlength']!.requiredLength }} characters long
+  </div>
+  <div *ngIf="control.errors!['maxlength']" class="error">
+    Value must be {{ control!.errors!['maxlength']!.requiredLength }} characters long
+  </div>
+  <div *ngIf="control.errors!['pattern']" class="error">
+    Incorrect Format
+  </div>
+</ng-container>
